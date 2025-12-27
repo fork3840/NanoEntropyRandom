@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <project xmlns="maven.apache.org"
          xmlns:xsi="www.w3.org"
          xsi:schemaLocation="maven.apache.org maven.apache.org">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ken</groupId>
+    <groupId>com.github.fork3840</groupId>
     <artifactId>nano-entropy-random</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>NanoEntropyRandom</name>
-    <description>自研高强度伪随机数生成工具库，基于线性同余算法并注入纳秒级环境熵。</description>
+    <description>基于线性同余算法并注入纳秒级环境熵的高强度伪随机数生成工具库。</description>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -39,7 +38,6 @@
                     <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
-			
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -47,7 +45,7 @@
                 <executions>
                     <execution>
                         <id>attach-sources</id>
-                        <phase>package</phase> 
+                        <phase>package</phase>
                         <goals>
                             <goal>jar-no-fork</goal>
                         </goals>
