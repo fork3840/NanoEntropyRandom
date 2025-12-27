@@ -7,10 +7,6 @@
     <groupId>com.github.fork3840</groupId>
     <artifactId>nano-entropy-random</artifactId>
     <version>1.0.0</version>
-    <packaging>jar</packaging>
-
-    <name>NanoEntropyRandom</name>
-    <description>基于线性同余算法并注入纳秒级环境熵的高强度伪随机数生成工具库。</description>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -26,32 +22,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.13.0</version>
-                <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <target>${maven.compiler.target}</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>3.3.1</version>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>jar-no-fork</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
 </project>

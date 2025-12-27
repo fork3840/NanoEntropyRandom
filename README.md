@@ -15,14 +15,11 @@
 - 📝 **自定义字符池**：支持指定字符集生成各种长度的随机字符串。
 - 🚀 **零依赖**：仅依赖标准的 JDK 21+，无任何第三方包，轻量且高效。
 
-## 📦 安装指南 (Installation)
+## 📦 安装 (Maven)
 
-### 1. 作为依赖引用 (推荐)
+在你的 `pom.xml` 中添加以下配置：
 
-本项目通过 [JitPack](jitpack.io) 分发，支持 Maven 和 Gradle。
-
-#### **Maven**
-在 `pom.xml` 中添加仓库和依赖：
+### 1. 添加仓库
 ```xml
 <repositories>
     <repository>
@@ -30,9 +27,3 @@
         <url>https://jitpack.io</url>
     </repository>
 </repositories>
-
-<dependency>
-    <groupId>com.github.fork3840</groupId>
-    <artifactId>nano-entropy-random</artifactId>
-    <version>v1.0.0</version>
-</dependency>
