@@ -17,6 +17,18 @@
 
 ## 📦 安装指南
 
+本项目已发布至 JitPack，你可以通过以下方式引用：
+
+### Gradle (Kotlin/Groovy)
+在你的 `settings.gradle` 中添加 JitPack 仓库：
+```gradle
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
 本项目使用 Maven 构建。首先在本地克隆项目并执行安装：
 
 ```bash
