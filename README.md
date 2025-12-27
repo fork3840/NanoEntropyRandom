@@ -15,24 +15,24 @@
 - 📝 **自定义字符池**：支持指定字符集生成各种长度的随机字符串。
 - 🚀 **零依赖**：仅依赖标准的 JDK 21+，无任何第三方包，轻量且高效。
 
-## 📦 Jitpack安装指南
+## 📦 安装指南 (Installation)
 
-本项目已发布至 JitPack，你可以通过以下方式引用：
+### 1. 作为依赖引用 (推荐)
 
-### Gradle (Kotlin/Groovy)
-在你的 `settings.gradle` 中添加 JitPack 仓库：
-```gradle
-dependencyResolutionManagement {
-    repositories {
-        mavenCentral()
-        maven { url 'https://jitpack.io' }
-    }
-}
+本项目通过 [JitPack](jitpack.io) 分发，支持 Maven 和 Gradle。
 
-## 📦 Maven安装指南
+#### **Maven**
+在 `pom.xml` 中添加仓库和依赖：
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
 
-### Maven
-本项目使用 Maven 构建。首先在本地克隆项目并执行安装：
-
-```bash
-mvn clean install
+<dependency>
+    <groupId>com.github.fork3840</groupId>
+    <artifactId>nano-entropy-random</artifactId>
+    <version>v1.0.0</version>
+</dependency>
