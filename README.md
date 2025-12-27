@@ -15,7 +15,7 @@
 - 📝 **自定义字符池**：支持指定字符集生成各种长度的随机字符串。
 - 🚀 **零依赖**：仅依赖标准的 JDK 21+，无任何第三方包，轻量且高效。
 
-## 📦 安装指南
+## 📦 Jitpack安装指南
 
 本项目已发布至 JitPack，你可以通过以下方式引用：
 
@@ -28,6 +28,8 @@ dependencyResolutionManagement {
         maven { url 'https://jitpack.io' }
     }
 }
+
+## 📦 Maven安装指南
 
 ### Maven
 本项目使用 Maven 构建。首先在本地克隆项目并执行安装：
